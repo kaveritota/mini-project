@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+      :root{
+    scroll-behavior: smooth;
+    --primary-color:white;
+    --secondary-color:orange;
+    --accent-color:rgb(34, 40, 49);
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+    .container-1{
+      background-image:url(./bg\ image.jpg) ;
+       height:fit-content;
+       background-repeat: no-repeat;
+
+
+    }
+    .logo{
+    color:var(--primary-color);
+    font-size:2rem ;
+    font-family: "Dancing Script", serif;
+    
+}
+.cont-p
+  {
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    /* background-color: black; */
+    width:100%; 
+    padding-left:5rem; 
+    padding-right:5rem ;
+    padding-top:2rem ;
+    padding-bottom:2rem ;
+}
+.headernav{
+    display:flex;
+    gap:40px;
+}
+a{
+    color:var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+}
+ 
+.ordernow{
+    background-color:var(--secondary-color);
+    border-radius:20px ;
+    padding:10px 40px;
+    width:fit-content;
+    
+}  
+.container6{
+    background-color:var(--accent-color);
+    margin-top:50px; 
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-columns:repeat(2,1fr) ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+    padding:100px;
+
+}
+ .aboutimage>img{
+    /* height:50%; */
+    width:60%;
+
+} 
+  
+ .about-restaurant{
+    display:flex;
+    flex-direction: column;
+    /*justify-content: center;
+    align-items: center;*/
+    gap:20px;
+    color:var(--primary-color);
+     
+ }
+ .footer{
+    background-color:var(--accent-color) ;
+    height:50vh;
+    padding:20px;
+   }
+   .footer-1{
+    display:grid;
+    grid-template-columns:repeat(3,1fr) ;
+    /* -content: center;
+    align-content: center;justify */
+    justify-content: space-around;
+    align-items: center;
+
+   }
+   .f-1,.f-2,.f-3{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px ;
+    color:white ;
+
+   }
+   .f-2{
+    text-align: center;
+   }
+   .location,.call,.mail{
+    display:flex;
+    gap:10px;
+   }
+   .location:hover,.call:hover,.mail:hover{
+    color:var(--secondary-color);
+   }
+   .footer-2{
+    text-align: center;
+    color:var(--primary-color);
+    margin-top:60px; 
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+
+   }
+   @media screen  and (max-width : 600px){
+    .container6{
+        grid-template-columns:1fr ;
+       }
+    .footer-1{
+        grid-template-columns:1fr ;
+       }
+   }
+   .header-icon{
+    display:none;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <header class="cont-p">
+            <div class="logo">Feane</div>
+            <nav class="headernav">
+                <a href="./index.html">HOME</a>
+                <a href="./home.html">MENU</a>
+                <a href="#">ABOUT</a>
+                <a href="./booktable.html">BOOK TABLE</a>
+            </nav>
+            <nav class="header-icon">
+                <a href="#"><ion-icon name="person"></ion-icon></a>
+                <a href="#"><ion-icon name="cart-sharp"></ion-icon></a>
+                <a href="#"><ion-icon name="search-sharp"></ion-icon></a>
+                <a href="#" class="order">Order Online</a>
+            </nav>
+        </header>
+    </div>
+    <!----------------------------------->
+    <div class="container6">
+        <div class="aboutimage">
+          <img src="./about-img.png" alt="aboutimage">
+        </div>
+      <div class="about-restaurant">
+        <h1 class="font">We Are Feane</h1>
+        <p class="rest-p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+        <a href="#" class="ordernow">Read More</a>
+      </div>
+    </div>
+    <!------------------------------------->
+    <div class="footer">
+        <div class="footer-1"> 
+          <div class="f-1">
+               <h4 class="font">Contact Us</h4>
+               <div class="location">
+                <ion-icon name="location-outline"></ion-icon>
+                <p>Location</p>
+               </div>
+               <div class="call">
+                <ion-icon name="call-outline"></ion-icon>
+                <p>call +01 1234567890</p>
+               </div>
+               <div class="mail">
+                <ion-icon name="mail-unread-outline"></ion-icon>
+                <p>demo@gmail.com</p>
+               </div>
+    
+          </div>
+    
+          <div class="f-2">
+            <h3 class="font">Feane</h3>
+             <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
+             <div class="all-icons">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-pinterest"></ion-icon>
+              <ion-icon name="logo-linkedin"></ion-icon>
+             </div>
+          </div>
+          <div class="f-3">
+             <h4 class="font">Opening Hours</h4>
+             <p>Everyday</p>
+             <p>10.00 Am-10.00 Pm</p>
+          </div>
+        </div>
+         <div class="footer-2">
+          <p>© 2024 All Rights Reserved By Free Html Templates</p>
+            <p>© Distributed By ThemeWagon</p>
+         </div>
+        </div>
+      
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+      :root{
+    scroll-behavior: smooth;
+    --primary-color:white;
+    --secondary-color:orange;
+    --accent-color:rgb(34, 40, 49);
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+    .container-1{
+      background-image:url(./bg\ image.jpg) ;
+       height:fit-content;
+       background-repeat: no-repeat;
+
+
+    }
+    .logo{
+    color:var(--primary-color);
+    font-size:2rem ;
+    font-family: "Dancing Script", serif;
+    
+}
+.cont-p
+  {
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    /* background-color: black; */
+    width:100%; 
+    padding-left:5rem; 
+    padding-right:5rem ;
+    padding-top:2rem ;
+    padding-bottom:2rem ;
+}
+.headernav{
+    display:flex;
+    gap:40px;
+}
+a{
+    color:var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+}
+a:hover{
+    color:var(--secondary-color);
+}
+.order{
+    background-color:var(--secondary-color);
+    border-radius:20px ;
+    padding:10px;
+}  
+.container7{
+    display:grid;
+    grid-template-columns:repeat(2,1fr) ;
+    gap:50px;
+    margin-top: 30px;
+    padding-left:100px ;
+    padding-right:100px ;
+    margin-bottom:30px ;
+     
+ }
+ .booking{
+    width:100%;
+    height:100%; 
+    display:grid;
+    grid-template-columns:1fr ;
+     
+ }
+ iframe{
+     width:100%;
+     height:100%;
+ }
+ .name,.phone,.email,.options,.date{
+    width:100%;
+    padding:10px;
+    border:2px solid black;
+    /* margin-top:20px; ;  */
+    font-size:1.5rem ;   
+ }
+ .phone,.email,.options,.date{
+margin-top: 20px;
+ }
+ .footer{
+    background-color:var(--accent-color) ;
+    height:50vh;
+    padding:20px;
+   }
+   .footer-1{
+    display:grid;
+    grid-template-columns:repeat(3,1fr) ;
+    /* -content: center;
+    align-content: center;justify */
+    justify-content: space-around;
+    align-items: center;
+
+   }
+   .f-1,.f-2,.f-3{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px ;
+    color:white ;
+
+   }
+   .f-2{
+    text-align: center;
+   }
+   .location,.call,.mail{
+    display:flex;
+    gap:10px;
+   }
+   .location:hover,.call:hover,.mail:hover{
+    color:var(--secondary-color);
+   }
+   .footer-2{
+    text-align: center;
+    color:var(--primary-color);
+    margin-top:60px; 
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+
+   }
+   @media screen and (max-width : 600px){
+    .container6{
+        grid-template-columns:1fr ;
+       }
+    .footer-1{
+        grid-template-columns:1fr ;
+       }
+   }
+   .header-icon{
+    display:none;
+   }
+
+</style>
+</head>
+<body>
+    <div class="container-1">
+        <header class="cont-p">
+            <div class="logo">Feane</div>
+            <nav class="headernav">
+                <a href="./index.html">HOME</a>
+                <a href="./home.html">MENU</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./booktable.html">BOOK TABLE</a>
+            </nav>
+            <nav class="header-icon">
+                <a href="#"><ion-icon name="person"></ion-icon></a>
+                <a href="#"><ion-icon name="cart-sharp"></ion-icon></a>
+                <a href="#"><ion-icon name="search-sharp"></ion-icon></a>
+                <a href="#" class="order">Order Online</a>
+            </nav>
+        </header>
+    </div>
+    <!-------------------------------->
+
+<div class="container7">
+  <div class="booking"> 
+    <form>
+      <div  > 
+      <input type="text" placeholder="Your Name" class="name" >
+      </div>
+      <div>
+      <input type="phone" placeholder="Mobile Number"  class="phone">                                        
+      </div>
+      <div>
+      <input type="textarea" placeholder="Email" class="email">
+      </div>
+      <div> 
+      <select id="" class="options">
+        <option value="" default>How Many Persons?</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+      </select>
+      </div>
+      <div> 
+      <input type="date" class="date">
+      </div>
+    </form>
+  </div>
+  <!--<div class="location">-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.303371013516!2d78.41265190262459!3d17.397222858633413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97a1ad421a55%3A0xbdd05964ac1d0e54!2sTasty%20n%20fresh!5e0!3m2!1sen!2sin!4v1730910965471!5m2!1sen!2sin"></iframe>
+</div>
+<div class="footer">
+    <div class="footer-1"> 
+      <div class="f-1">
+           <h4 class="font">Contact Us</h4>
+           <div class="location">
+            <ion-icon name="location-outline"></ion-icon>
+            <p>Location</p>
+           </div>
+           <div class="call">
+            <ion-icon name="call-outline"></ion-icon>
+            <p>call +01 1234567890</p>
+           </div>
+           <div class="mail">
+            <ion-icon name="mail-unread-outline"></ion-icon>
+            <p>demo@gmail.com</p>
+           </div>
+
+      </div>
+
+      <div class="f-2">
+        <h3 class="font">Feane</h3>
+         <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
+         <div class="all-icons">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-pinterest"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+         </div>
+      </div>
+      <div class="f-3">
+         <h4 class="font">Opening Hours</h4>
+         <p>Everyday</p>
+         <p>10.00 Am-10.00 Pm</p>
+      </div>
+    </div>
+     <div class="footer-2">
+      <p>© 2024 All Rights Reserved By Free Html Templates</p>
+        <p>© Distributed By ThemeWagon</p>
+     </div>
+    </div>
+  
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 
+
+

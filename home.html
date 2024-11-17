@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    :root{
+    scroll-behavior: smooth;
+    --primary-color:white;
+    --secondary-color:orange;
+    --accent-color:rgb(34, 40, 49);
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+    .container-1{
+      background-image:url(./bg\ image.jpg) ;
+       height:fit-content;
+       background-repeat: no-repeat;
+
+
+    }
+    .logo{
+    color:var(--primary-color);
+    font-size:2rem ;
+    font-family: "Dancing Script", serif;
+    
+}
+.cont-p
+  {
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    /* background-color: black; */
+    width:100%; 
+    padding-left:5rem; 
+    padding-right:5rem ;
+    padding-top:2rem ;
+    padding-bottom:2rem ;
+}
+.headernav{
+    display:flex;
+    gap:40px;
+}
+a{
+    color:var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+}
+a:hover{
+    color:var(--secondary-color);
+}
+.order{
+    background-color:var(--secondary-color);
+    border-radius:20px ;
+    padding:10px;
+}
+.pract1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding: 50px 130px;
+}
+
+.practimg{
+    height: 100px;
+    width: 120px;
+    margin-left:20px;
+    margin-top: 15px;
+    transition: transform 1s;
+}
+.practimg:hover{
+    transform:scale(1.2);
+    cursor: pointer;
+
+  }
+
+.pract2{
+    background-color: var(--accent-color);
+    border-radius: 20%;
+}
+.pract3{
+    background-color:lightgray;
+    border-bottom-left-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+.pract4{
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 20px;
+}
+
+.pract5{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+}
+.cart-outline{
+    background-color:var(--secondary-color) ;
+    color:white ;
+    font-size:1rem ;
+    border-radius:50%;
+    padding: 10px;
+}
+@media screen  and (max-width : 700px){
+
+  .pract1{
+        grid-template-columns:1fr ;
+       }
+}
+.header-icon{
+  display:none;
+}
+
+</style>
+<body>
+    <div class="container-1">
+        <header class="cont-p">
+            <div class="logo">Feane</div>
+            <nav class="headernav">
+                <a href="./index.html">HOME</a>
+                <a href="#">MENU</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./booktable.html">BOOK TABLE</a>
+            </nav>
+            <nav class="header-icon">
+                <a href="#"><ion-icon name="person"></ion-icon></a>
+                <a href="#"><ion-icon name="cart-sharp"></ion-icon></a>
+                <a href="#"><ion-icon name="search-sharp"></ion-icon></a>
+                <a href="#" class="order">Order Online</a>
+            </nav>
+        </header>
+    </div>
+<!---------------------------------------------->
+<div class="pract0">
+  <div class="pract1">
+    <div class="pract2">
+      <div class="pract3">
+        <img src="./chicken pizza.png" alt="pizza" class="practimg">
+      </div>
+        <div class="pract4">
+          <h2>chicken pizza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti obcaecati recusandae ea praesentium! Ratione repellendus quis quidem, tempore voluptatum alias necessitatibus at perspiciatis voluptates soluta, quae ipsa cumque nobis.</p>
+          <div class="pract5">
+            <h2>20$</h2>
+            <ion-icon  class="cart-outline" name="cart-outline"></ion-icon>
+          </div>
+        </div>
+    </div>
+    <!-- ---------1-------------------------->
+    <div class="pract2">
+      <div class="pract3">
+        <img src="burger1.png" alt="pizza" class="practimg">
+      </div>
+        <div class="pract4">
+          <h2>chicken pizza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti obcaecati recusandae ea praesentium! Ratione repellendus quis quidem, tempore voluptatum alias necessitatibus at perspiciatis voluptates soluta, quae ipsa cumque nobis.</p>
+          <div class="pract5">
+            <h2>20$</h2>
+            <ion-icon  class="cart-outline" name="cart-outline"></ion-icon>
+          </div>
+        </div>
+    </div>
+
+    
+
+    <!-- ----------2--------------- -->
+
+    <div class="pract2">
+      <div class="pract3">
+        <img src="pizza2.png" alt="pizza" class="practimg">
+      </div>
+        <div class="pract4">
+          <h2>chicken pizza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti obcaecati recusandae ea praesentium! Ratione repellendus quis quidem, tempore voluptatum alias necessitatibus at perspiciatis voluptates soluta, quae ipsa cumque nobis.</p>
+          <div class="pract5">
+            <h2>20$</h2>
+            <ion-icon  class="cart-outline" name="cart-outline"></ion-icon>
+          </div>
+        </div>
+    </div>
+
+    <!-- -----------3---------------- -->
+
+    <div class="pract2">
+      <div class="pract3">
+        <img src="burger2.png" alt="pizza" class="practimg">
+      </div>
+        <div class="pract4">
+          <h2>chicken pizza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti obcaecati recusandae ea praesentium! Ratione repellendus quis quidem, tempore voluptatum alias necessitatibus at perspiciatis voluptates soluta, quae ipsa cumque nobis.</p>
+          <div class="pract5">
+            <h2>20$</h2>
+            <ion-icon  class="cart-outline" name="cart-outline"></ion-icon>
+          </div>
+        </div>
+    </div>
+
+    <!-- ------------4----------------- -->
+
+    <div class="pract2">
+      <div class="pract3">
+        <img src="pasta.png" alt="pizza" class="practimg">
+      </div>
+        <div class="pract4">
+          <h2>chicken pizza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti obcaecati recusandae ea praesentium! Ratione repellendus quis quidem, tempore voluptatum alias necessitatibus at perspiciatis voluptates soluta, quae ipsa cumque nobis.</p>
+          <div class="pract5">
+            <h2>20$</h2>
+            <ion-icon  class="cart-outline" name="cart-outline"></ion-icon>
+          </div>
+        </div>
+    </div>
+
+    <!-- -----------5------------------ -->
+
+    <div class="pract2">
+      <div class="pract3">
+        <img src="fries.png" alt="pizza" class="practimg">
+      </div>
+        <div class="pract4">
+          <h2>chicken pizza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti obcaecati recusandae ea praesentium! Ratione repellendus quis quidem, tempore voluptatum alias necessitatibus at perspiciatis voluptates soluta, quae ipsa cumque nobis.</p>
+          <div class="pract5">
+            <h2>20$</h2>
+            <ion-icon  class="cart-outline" name="cart-outline"></ion-icon>
+          </div>
+        </div>
+    </div>
+
+    <!-- /--------------6--------------- -->
+
+    <div class="pract2">
+      <div class="pract3">
+        <img src="pizza3.png" alt="pizza" class="practimg">
+      </div>
+        <div class="pract4">
+          <h2>chicken pizza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti obcaecati recusandae ea praesentium! Ratione repellendus quis quidem, tempore voluptatum alias necessitatibus at perspiciatis voluptates soluta, quae ipsa cumque nobis.</p>
+          <div class="pract5">
+            <h2>20$</h2>
+            <ion-icon  class="cart-outline" name="cart-outline"></ion-icon>
+          </div>
+        </div>
+    </div>
+
+    <!-- ---------------7------------------- -->
+
+    <div class="pract2">
+      <div class="pract3">
+        <img src="burger3.png" alt="pizza" class="practimg">
+      </div>
+        <div class="pract4">
+          <h2>chicken pizza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti obcaecati recusandae ea praesentium! Ratione repellendus quis quidem, tempore voluptatum alias necessitatibus at perspiciatis voluptates soluta, quae ipsa cumque nobis.</p>
+          <div class="pract5">
+            <h2>20$</h2>
+            <ion-icon  class="cart-outline" name="cart-outline"></ion-icon>
+          </div>
+        </div>
+    </div>
+
+    <!-- --------------8---------------------- -->
+
+    <div class="pract2">
+      <div class="pract3">
+        <img src="pasta3.jpeg" alt="pizza" class="practimg">
+      </div>
+        <div class="pract4">
+          <h2>chicken pizza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti obcaecati recusandae ea praesentium! Ratione repellendus quis quidem, tempore voluptatum alias necessitatibus at perspiciatis voluptates soluta, quae ipsa cumque nobis.</p>
+          <div class="pract5">
+            <h2>20$</h2>
+            <ion-icon  class="cart-outline" name="cart-outline"></ion-icon>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- -------------9---------------- ---->
+
+  </div>
+</div>
+
+
+<!------------------------------------->  
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
