@@ -95,7 +95,7 @@ ion-icon{
     /* gap:20px;    */
     /* padding:10px;  */
     width:100%;
-    margin-top: 5%;
+    margin-top: 10%;
     text-align:center;
     /* padding-left:10% ;
     padding-bottom: 10px; */
@@ -383,20 +383,9 @@ margin-top: 20px;
   .table{
     color:black;
     text-align: center;
-    margin:20px;
     font-family:"Dancing Script", serif;
     font-size:3rem ;
   }
-   .container8{
-     display:block;
-    
-    /* justify-content:center;
-    gap:30px; */
-    margin-left:auto ;
-    margin-right:auto;
-    margin-top: 40px;
-    width:100%;
-   }
    .cont-a{
     background-color:var(--accent-color);
     color:var(--primary-color);
@@ -473,12 +462,13 @@ margin-top: 20px;
     gap:10px;
 
    }
-   @media screen and (min-width: 600px) and (max-width : 900px){
+   @media screen and (min-width: 550px) and (max-width : 900px){
     .container3{
         grid-template-columns: 1fr;
     }
     .pract1{
         grid-template-columns:1fr 1fr ;
+         
     }
     .container7{
         grid-template-columns:1fr;
@@ -496,22 +486,17 @@ margin-top: 20px;
     }
    }
 
-
-   @media screen  and (max-width : 600px){
+   @media screen  and (max-width : 500px){
     .cont-p{
-        padding-left:6rem ;
-        padding-right:6rem ;
+         
         padding-left: 5px;
         padding-right:5px;
-    
-        /* height:40%;
-        align-items:start; */
     }
     .hamberger{
         display:block;
     }
     #checkbox:checked+.headernav{
-        /* position:; */
+        
         display:flex;
         flex-direction: column;
         width:40%;
@@ -523,7 +508,7 @@ margin-top: 20px;
         height:50%;
      }
      .container-1{
-        height:110vh;
+        height:105vh;
      }
      .logo{
         align-self:start ;
@@ -536,16 +521,14 @@ margin-top: 20px;
      #header-nav:hover{
         color:var(--secondary-color)
      }
-     .cont-p{
-        padding-right:5rem;
-        padding-left:5rem;
-     }
      .cont-q{
-        width:90%;
+        width:100%;
         text-align: center;
+        margin-top:40%;
      }
      .logo,.hamberger{
-        color:var(--secondary-color)
+        color:var(--secondary-color);
+        font-size:3rem ;
      }
      
      .header-icon,.headernav{
@@ -553,19 +536,31 @@ margin-top: 20px;
         }
        .container3{
          grid-template-columns:1fr ;
+         padding:1rem;
        } 
        .cont-1{
          display:flex;
          flex-direction: column;
+         gap:5px;
          .burger{
-            width:50%;
+            width:60%;
          }
        }
        .pract1{
         grid-template-columns:1fr ;
+        padding-left:2rem;
+        padding-right:2rem ;
+       }
+       .container4{
+        gap:50px;
+        flex-wrap: wrap;
        }
        .container6{
         grid-template-columns:1fr ;
+        padding:2rem;
+       }
+       .aboutimage{
+        width:150%;
        }
        .container7{
         grid-template-columns:1fr ;
@@ -575,6 +570,26 @@ margin-top: 20px;
         }
        .footer-1{
         grid-template-columns:1fr ;
+       }
+       .container7{
+        padding-left:1rem ;
+        padding-right:1rem;
+
+       }
+        /* .matter-image1{
+          display:inline;
+        } */
+         .cont-a{
+             flex-direction: column;
+             width:100vw;
+             margin-left:1rem ;
+             margin-right:1rem ;
+         }
+       #location{
+        height:30vh;
+       }
+       .table{
+        text-align: center;
        }
    }
     
