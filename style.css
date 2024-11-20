@@ -510,14 +510,14 @@ margin-top: 20px;
         cursor:pointer;
      }
      .container-1{
-        height:105vh;
+        height:110vh;
      }
      .logo{
         align-self:start ;
      }
      .hamberger{
         align-self:start;
-        font-size:3rem;
+        font-size:4rem;
          
      }
      #header-nav:hover{
@@ -526,7 +526,7 @@ margin-top: 20px;
      .cont-q{
         width:100%;
         text-align: center;
-        margin-top:40%;
+        margin-top:30%;
      }
      .logo{
         font-size:3rem ;
